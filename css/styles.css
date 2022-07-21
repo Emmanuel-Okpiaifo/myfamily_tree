@@ -3,7 +3,8 @@
 }
 
 body{
-    width: 100%;
+    width: auto;
+    height: auto;
 }
 
 .navbar-style{
