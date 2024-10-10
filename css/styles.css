@@ -71,50 +71,65 @@ body{
     border-radius: 5%;
 }
 
-.section{
-    background-image: url(../images/download5.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: auto;
-    height: auto;
+/* General Styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
 }
 
-.section-4{
-    background: #ff512f;
-    width: auto;
-    height: auto;
+.logo {
+    width: 50px;
+    margin-right: 15px;
 }
 
-.section-4 .container h1 {
-    font-size: 6vmin;
-    padding-top: 14vmin;
+.section-title {
+    font-size: 2.5em;
+    color: #333;
+    position: relative;
+    display: inline-block;
 }
-  
-  .section-4 .team {
-    padding: 10vmin 4vmin;
+
+.section-title::after {
+    content: "";
+    width: 60px;
+    height: 5px;
+    background: #ffd700;
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
 }
-  
-  .section-4 .card {
-    width: 22em;
-    margin-top: 10vmin;
+
+/* Gallery Styles */
+.gallery-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
-  
-  .section-4 .card .card-text {
-    padding: 0.5em;
+
+.gallery-image {
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
-  
-  .section-4 .card-body > a {
-    font-size: 1.5em;
+
+.gallery-image:hover {
+    transform: scale(1.1);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
 }
-  
-  .section-4 .carousel-item {
-    padding-left: 3rem;
+
+/* Responsive */
+@media (max-width: 768px) {
+    .section-title {
+        font-size: 2em;
+    }
+
+    .gallery-image {
+        width: 100%;
+    }
 }
-  
-  .border-radius {
-    border-radius: 340px;
-    width: 60%;
-}
+
 
   footer {
     background: rgba(0, 0, 0, 0.815);
@@ -135,3 +150,14 @@ body{
     border: none;
 }
 
+/* Styling the icons */
+.icon {
+    margin: 10px; /* Space between icons */
+    transition: transform 0.3s ease, color 0.3s ease; /* Smooth transition for animations */
+  }
+  
+  /* Grow and change color on hover */
+  .icon:hover {
+    transform: scale(1.3) rotate(10deg); /* Grow and slightly rotate the icon */
+    color: #ffd700; /* Change color to gold */
+  }

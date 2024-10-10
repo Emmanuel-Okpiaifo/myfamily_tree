@@ -4,150 +4,114 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Family</title>
+    <title>My Family Gallery</title>
     <link rel="stylesheet" href="css/bootstrap.css">
-    <script src="js/bootstrap.bundle.js"></script>
     <link rel="stylesheet" href="css/styles.css">
     <link rel="icon" href="./images/download (1).png">
+    <script src="https://kit.fontawesome.com/2e9c6ff108.js" crossorigin="anonymous"></script>
 </head>
-<body>
+<body id="gallery-body">
     <header>
-    <nav class="navbar navbar-style">
-        <div class="container">
-            <div class="navbar-header">
-                <a href=""><img src="./images/download.png" alt="" class="logo"></a>
-                <a href=""><img src="./images/download (1).png" alt="" class="logo"></a>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="#"><img src="./images/download.png" alt="" class="logo"> Family Gallery</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav ml-auto">
+                        <a class="nav-link active" href="./index.html">Home</a>
+                        <a class="nav-link" href="./Gallery.html">Gallery</a>
+                        <a class="nav-link" href="./About.html">About</a>
+                        <a class="nav-link" href="./contact.html">Contact</a>
+                    </div>
+                </div>
             </div>
-    <nav class="navbar navbar-expand-lg navbar-light">
-        <div class="container-fluid">
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav">
-              <a class="nav-link" href="./index.html">Home</a>
-              <a class="nav-link" href="./Gallery.html">Gallery</a>
-              <a class="nav-link" href="./About.html">About</a>
-              <a class="nav-link" href="./contact.html">Contact</a>
-            </div>
-          </div>
-        </div>
-      </nav>
+        </nav>
     </header>
-<div class="section"> <br>
-    <div class="container-fluid">
-        <div class="row" id="gallery" data-toggle="modal" data-target="#exampleModal">
-            <div class="col-12 col-sm-6 col-lg-3">
-              <img class="w-100" src="./images/Gallery/Snapchat-227637034.jpg" data-target="#carouselExample" data-slide-to="0">
+
+    <section class="gallery-section container my-5">
+        <h2 class="text-center mb-5 section-title">Family Gallery</h2>
+        <div class="row gallery-container" id="gallery" data-bs-toggle="modal" data-bs-target="#imageModal">
+            <!-- Retain all images as in the original structure -->
+            <div class="col-12 col-sm-6 col-lg-3 my-2">
+              <img class="img-fluid gallery-image rounded" src="./images/Gallery/Snapchat-227637034.jpg" alt="Family Member 1">
             </div>
-            <div class="col-12 col-sm-6 col-lg-3">
-              <img class="w-100" src="./images/Gallery/IMG-20211129-WA0016.jpg" data-target="#carouselExample" data-slide-to="1">
+            <div class="col-12 col-sm-6 col-lg-3 my-2">
+              <img class="img-fluid gallery-image rounded" src="./images/Gallery/IMG-20211129-WA0016.jpg" alt="Family Member 2">
             </div>
-            <div class="col-12 col-sm-6 col-lg-3">
-              <img class="w-100" src="./images/Gallery/Emma.jpg" data-target="#carouselExample" data-slide-to="2">
+            <div class="col-12 col-sm-6 col-lg-3 my-2">
+              <img class="img-fluid gallery-image rounded" src="./images/Gallery/Emma.jpg" alt="Family Member 3">
             </div>
-            <div class="col-12 col-sm-6 col-lg-3">
-              <img class="w-100" src="./images/Gallery/deborah_6__1_.JPG" data-target="#carouselExample" data-slide-to="3">
+            <div class="col-12 col-sm-6 col-lg-3 my-2">
+              <img class="img-fluid gallery-image rounded" src="./images/Gallery/deborah_6__1_.JPG" alt="Family Member 4">
             </div>
-          </div>
-    </div> <br>
-    <div class="hello">
-        <div class="row" id="gallery" data-toggle="modal" data-target="#exampleModal">
-            <div class="col-12 col-sm-6 col-lg-3">
-              <img class="w-100" src="./images/Gallery/IMG-20211218-WA0031.jpg" data-target="#carouselExample" data-slide-to="0">
+            <div class="col-12 col-sm-6 col-lg-3 my-2">
+              <img class="img-fluid gallery-image rounded" src="./images/img/francaokpiaifo_73575100.jpg" alt="Family Member 4">
             </div>
-            <div class="col-12 col-sm-6 col-lg-3">
-              <img class="w-100" src="./images/Gallery/IMG-20210424-WA0035.jpg" data-target="#carouselExample" data-slide-to="1">
+            <div class="col-12 col-sm-6 col-lg-3 my-2">
+              <img class="img-fluid gallery-image rounded" src="./images/img/gloryesohe_73758682.jpg" alt="Family Member 4">
             </div>
-            <div class="col-12 col-sm-6 col-lg-3">
-              <img class="w-100" src="./images/Gallery/IMG-20211129-WA0017.jpg" data-target="#carouselExample" data-slide-to="2">
+            <div class="col-12 col-sm-6 col-lg-3 my-2">
+              <img class="img-fluid gallery-image rounded" src="./images/img/IMG-20230616-WA0057.jpg" alt="Family Member 4">
             </div>
-            <div class="col-12 col-sm-6 col-lg-3">
-              <img class="w-100" src="./images/Gallery/IMG-20210914-WA0008.jpg" data-target="#carouselExample" data-slide-to="3">
+            <div class="col-12 col-sm-6 col-lg-3 my-2">
+              <img class="img-fluid gallery-image rounded" src="./images/img/IMG-20240804-WA0097.jpg" alt="Family Member 4">
             </div>
-          </div>
-    </div> <br>
-    <div class="never">
-        <div class="row" id="gallery" data-toggle="modal" data-target="#exampleModal">
-            <div class="col-12 col-sm-6 col-lg-3">
-              <img class="w-100" src="./images/Gallery/IMG-20211218-WA0063.jpg" data-target="#carouselExample" data-slide-to="0">
+            <div class="col-12 col-sm-6 col-lg-3 my-2">
+              <img class="img-fluid gallery-image rounded" src="./images/img/IMG-20240830-WA0005.jpg" alt="Family Member 4">
             </div>
-            <div class="col-12 col-sm-6 col-lg-3">
-              <img class="w-100" src="./images/Gallery/IMG-20211224-WA0028.jpg" data-target="#carouselExample" data-slide-to="1">
+            <div class="col-12 col-sm-6 col-lg-3 my-2">
+              <img class="img-fluid gallery-image rounded" src="./images/img/IMG-20241001-WA0052.jpg" alt="Family Member 4">
             </div>
-            <div class="col-12 col-sm-6 col-lg-3">
-              <img class="w-100" src="./images/Gallery/IMG-20220214-WA0010~2.jpg" data-target="#carouselExample" data-slide-to="2">
+            <div class="col-12 col-sm-6 col-lg-3 my-2">
+              <img class="img-fluid gallery-image rounded" src="./images/img/IMG-20241009-WA0036.jpg" alt="Family Member 4">
             </div>
-            <div class="col-12 col-sm-6 col-lg-3">
-              <img class="w-100" src="./images/Gallery/IMG-20220214-WA0007.jpg" data-target="#carouselExample" data-slide-to="3">
+            <div class="col-12 col-sm-6 col-lg-3 my-2">
+              <img class="img-fluid gallery-image rounded" src="./images/img/IMG-20241009-WA0039.jpg" alt="Family Member 4">
             </div>
-          </div>
-    </div> <br>
-    <div class="draft">
-        <div class="row" id="gallery" data-toggle="modal" data-target="#exampleModal">
-            <div class="col-12 col-sm-6 col-lg-3">
-              <img class="w-100" src="./images/Gallery/IMG-20220703-WA0018.jpg" data-target="#carouselExample" data-slide-to="0">
+            <div class="col-12 col-sm-6 col-lg-3 my-2">
+              <img class="img-fluid gallery-image rounded" src="./images/img/IMG-20241009-WA0043.jpg" alt="Family Member 4">
             </div>
-            <div class="col-12 col-sm-6 col-lg-3">
-              <img class="w-100" src="./images/Gallery/IMG-20220703-WA0031.jpg" data-target="#carouselExample" data-slide-to="1">
+            <div class="col-12 col-sm-6 col-lg-3 my-2">
+              <img class="img-fluid gallery-image rounded" src="./images/img/IMG-20241009-WA0042.jpg" alt="Family Member 4">
             </div>
-            <div class="col-12 col-sm-6 col-lg-3">
-              <img class="w-100" src="./images/Gallery/IMG-20220703-WA0038.jpg" data-target="#carouselExample" data-slide-to="2">
+            <div class="col-12 col-sm-6 col-lg-3 my-2">
+              <img class="img-fluid gallery-image rounded" src="./images/img/IMG-20241009-WA0045.jpg" alt="Family Member 4">
             </div>
-            <div class="col-12 col-sm-6 col-lg-3">
-              <img class="w-100" src="./images/Gallery/IMG-20220711-WA0040.jpg" data-target="#carouselExample" data-slide-to="3">
+            <div class="col-12 col-sm-6 col-lg-3 my-2">
+              <img class="img-fluid gallery-image rounded" src="./images/img/IMG-20241009-WA0044.jpg" alt="Family Member 4">
             </div>
-          </div>
-    </div> <br>
-    <div class="foot">
-        <div class="row" id="gallery" data-toggle="modal" data-target="#exampleModal">
-            <div class="col-12 col-sm-6 col-lg-3">
-              <img class="w-100" src="./images/Gallery/IMG-20220711-WA0043.jpg" data-target="#carouselExample" data-slide-to="0">
+            <div class="col-12 col-sm-6 col-lg-3 my-2">
+              <img class="img-fluid gallery-image rounded" src="./images/img/IMG-20241009-WA0046.jpg" alt="Family Member 4">
             </div>
-            <div class="col-12 col-sm-6 col-lg-3">
-              <img class="w-100" src="./images/Gallery/IMG-20220711-WA0077.jpg" data-target="#carouselExample" data-slide-to="1">
+            <div class="col-12 col-sm-6 col-lg-3 my-2">
+              <img class="img-fluid gallery-image rounded" src="./images/img/IMG-20241009-WA0047.jpg" alt="Family Member 4">
             </div>
-            <div class="col-12 col-sm-6 col-lg-3">
-              <img class="w-100" src="./images/Gallery/IMG-20220711-WA0069.jpg" data-target="#carouselExample" data-slide-to="2">
+            <div class="col-12 col-sm-6 col-lg-3 my-2">
+              <img class="img-fluid gallery-image rounded" src="./images/img/Instagram_73724452.jpg" alt="Family Member 4">
             </div>
-            <div class="col-12 col-sm-6 col-lg-3">
-              <img class="w-100" src="./images/Gallery/IMG-20220711-WA0072.jpg" data-target="#carouselExample" data-slide-to="3">
+            <div class="col-12 col-sm-6 col-lg-3 my-2">
+              <img class="img-fluid gallery-image rounded" src="./images/img/Instagram_73725194.jpg" alt="Family Member 4">
             </div>
-          </div>
-    </div> <br>
-    <div class="foot">
-      <div class="row" id="gallery" data-toggle="modal" data-target="#exampleModal">
-          <div class="col-12 col-sm-6 col-lg-3">
-            <img class="w-100" src="./images/Gallery/IMG-20211226-WA0076.jpg" data-target="#carouselExample" data-slide-to="0">
-          </div>
-          <div class="col-12 col-sm-6 col-lg-3">
-            <img class="w-100" src="./images/Gallery/IMG-20211218-WA0098.jpg" data-target="#carouselExample" data-slide-to="1">
-          </div>
-          <div class="col-12 col-sm-6 col-lg-3">
-            <img class="w-100" src="./images/Gallery/IMG-20210503-WA0059.jpg" data-target="#carouselExample" data-slide-to="2">
-          </div>
-          <div class="col-12 col-sm-6 col-lg-3">
-            <img class="w-100" src="./images/Gallery/IMG-20220109-WA0046.jpg" data-target="#carouselExample" data-slide-to="3">
-          </div>
-        </div> <br>
-  </div>
-  <div class="foot">
-    <div class="row" id="gallery" data-toggle="modal" data-target="#exampleModal">
-        <div class="col-12 col-sm-6 col-lg-3">
-          <img class="w-100" src="./images/Gallery/0ade008a305e4b858d16e26b85cd0d96.jpg" data-target="#carouselExample" data-slide-to="0">
+            <div class="col-12 col-sm-6 col-lg-3 my-2">
+              <img class="img-fluid gallery-image rounded" src="./images/img/Snapchat-1956078159.jpg" alt="Family Member 4">
+            </div>
+            <div class="col-12 col-sm-6 col-lg-3 my-2">
+              <img class="img-fluid gallery-image rounded" src="./images/img/Snapchat-51549175.jpg" alt="Family Member 4">
+            </div>
+            
+            <!-- Add the rest of the images here in a similar structure -->
         </div>
-        <div class="col-12 col-sm-6 col-lg-3">
-          <img class="w-100" src="./images/Gallery/IMG-20210606-WA0080.jpg" data-target="#carouselExample" data-slide-to="1">
-        </div>
-        <div class="col-12 col-sm-6 col-lg-3">
-          <img class="w-100" src="./images/Gallery/IMG-20220717-WA0004.jpg" data-target="#carouselExample" data-slide-to="2">
-        </div>
-        <div class="col-12 col-sm-6 col-lg-3">
-          <img class="w-100" src="./images/Gallery/IMG-20220717-WA0026.jpg" data-target="#carouselExample" data-slide-to="3">
-        </div>
-      </div>
-</div> <br>
-</div> 
+    </section>
+
+
+
+    <!-- Include Particles.js Library -->
+<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/bootstrap.bundle.js"></script>
+    <script src="js/script.js"></script>
 <footer>
   <div class="container-fluid p-0">
     <div class="row text-left">
@@ -197,11 +161,11 @@ Submit
         <h4 class="text-light">Follow Us</h4>
         <p class="text-muted">Let us be social</p>
         <div class="column text-light">
-          <img src="../bootstrap-icons-1.9.1/facebook.svg" alt="Bootstrap" width="25" height="25">
-          <img src="../bootstrap-icons-1.9.1/twitter.svg" alt="Bootstrap" width="25" height="25">
-          <img src="../bootstrap-icons-1.9.1/instagram.svg" alt="Bootstrap" width="25" height="25">
-          <img src="../bootstrap-icons-1.9.1/youtube.svg" alt="Bootstrap" width="29" height="29">
-        </div>
+          <i class="fab fa-facebook fa-1.5x icon"></i>
+          <i class="fab fa-twitter fa-1.5x icon"></i>
+          <i class="fab fa-instagram fa-1.5x icon"></i>
+          <i class="fab fa-youtube fa-1.5x icon"></i>
+        </div>                
       </div>
     </div>
   </div>
