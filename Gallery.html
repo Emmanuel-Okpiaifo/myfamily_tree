@@ -6,15 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Family Gallery</title>
     <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/styles2.css">
     <link rel="icon" href="./images/download (1).png">
     <script src="https://kit.fontawesome.com/2e9c6ff108.js" crossorigin="anonymous"></script>
 </head>
 <body id="gallery-body">
     <header>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-3">
             <div class="container">
-                <a class="navbar-brand" href="#"><img src="./images/download.png" alt="" class="logo"> Family Gallery</a>
+                <a class="navbar-brand d-flex align-items-center" href="#">
+                    <img src="./images/download.png" alt="" class="logo mr-2">
+                    <span class="brand-title">Family Gallery</span>
+                </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -28,10 +32,18 @@
                 </div>
             </div>
         </nav>
+
+        <div class="header-content text-center text-light d-flex flex-column justify-content-center align-items-center">
+          <h1 class="display-4 header-title mb-3">Welcome to Our Family Gallery</h1>
+          <p class="lead header-text mb-4">A place to cherish and relive our precious family moments.</p>
+          <a href="#gallery" class="btn btn-lg btn-outline-light">View Gallery</a>
+      </div>
     </header>
 
+    
+
+
     <section class="gallery-section container my-5">
-        <h2 class="text-center mb-5 section-title">Family Gallery</h2>
         <div class="row gallery-container" id="gallery" data-bs-toggle="modal" data-bs-target="#imageModal">
             <!-- Retain all images as in the original structure -->
             <div class="col-12 col-sm-6 col-lg-3 my-2">
@@ -107,8 +119,6 @@
 
 
 
-    <!-- Include Particles.js Library -->
-<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="js/bootstrap.bundle.js"></script>
     <script src="js/script.js"></script>
@@ -117,7 +127,7 @@
     <div class="row text-left">
       <div class="col-md-5 col-sm-5">
         <h4 class="text-light">About us</h4>
-        <p class="text-muted">Why waste your time surfing the interney when you can have ready-made templates delivered to your email? At check.com, our developers have made sure to provide easy and affordable services to our customers.</p>
+        <p class="text-muted">Why waste your time surfing the internet when you can have ready-made templates delivered to your email? At check.com, our developers have made sure to provide easy and affordable services to our customers.</p>
         <p class="pt-4 text-muted">Copyright ©2019 All rights reserved | This template is made by
           <span> Emmanuel Okpiaifo</span>
         </p>

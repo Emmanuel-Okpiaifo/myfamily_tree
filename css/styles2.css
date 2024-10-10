@@ -1,0 +1,238 @@
+/* General Styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Logo Styling */
+.logo {
+    width: 50px;
+    margin-right: 15px;
+}
+
+/* Navbar Styling */
+.brand-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.navbar-nav .nav-link {
+    padding: 8px 15px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    transition: color 0.3s ease;
+}
+
+/* Navigation Link Hover Effect */
+.navbar-nav .nav-link:hover {
+    color: #ffd700; /* Gold color on hover */
+}
+
+/* Enhanced Header Section */
+.header-content {
+    height: 70vh;
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url('./images/family-header.jpg') no-repeat center center/cover;
+    padding: 50px;
+    position: relative;
+}
+
+.header-title {
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.header-text {
+    font-size: 1.2rem;
+    max-width: 600px;
+}
+
+/* Button Styling */
+.btn-outline-light {
+    padding: 10px 30px;
+    border-radius: 30px;
+    font-size: 1.1rem;
+    transition: background-color 0.3s, transform 0.3s ease;
+}
+
+/* Hover Effect on Button */
+.btn-outline-light:hover {
+    background-color: #ffd700;
+    color: #000;
+    transform: translateY(-3px);
+}
+
+/* Section Title Styling */
+.section-title {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    position: relative;
+    color: #ffd700;
+    text-transform: uppercase;
+}
+
+.section-title::after {
+    content: '';
+    width: 100px;
+    height: 4px;
+    background: #ffd700;
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 10px;
+}
+
+/* Gallery Background Styling */
+#gallery-body {
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab); /* Initial colors */
+    background-size: 400% 400%; /* Increase background size for smooth transitions */
+    animation: gradientAnimation 15s ease infinite; /* Apply smooth animation */
+    margin: 0;
+    padding: 0;
+    min-height: 100vh; /* Ensure body covers full height */
+}
+
+/* Keyframes for Smooth Gradient Animation */
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* Gallery Section Styling */
+.gallery-section {
+    padding: 60px 0;
+    position: relative;
+    z-index: 2;
+}
+
+/* Gallery Container Layout */
+.gallery-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* Gallery Image Styling */
+.gallery-image {
+    width: 350px; /* Set a fixed width */
+    height: 350px; /* Set a fixed height */
+    object-fit: cover; /* Maintain aspect ratio */
+    margin: 15px;
+    border-radius: 15px;
+    transition: all 0.4s ease; /* General transition for smooth effect */
+}
+
+/* Hover Effect */
+.gallery-image:hover {
+    transform: scale(1.2); /* Zoom in effect */
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5); /* Shadow effect */
+}
+
+/* Fade-In Animation on Page Load */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: scale(0.8); /* Start smaller */
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1); /* End at full size */
+    }
+}
+
+/* Footer Styling */
+footer {
+    background: #222;
+    padding: 20px 0;
+    text-align: center;
+    color: #fff;
+}
+
+/* Responsive Design for Medium Screens */
+@media (max-width: 768px) {
+    .gallery-image {
+        width: 300px; /* Adjust size for tablets */
+        height: 300px;
+    }
+
+    .header-title {
+        font-size: 2.5rem;
+    }
+
+    .header-content {
+        height: 50vh;
+    }
+
+    .btn-outline-light {
+        padding: 8px 20px;
+    }
+
+    .gallery-image {
+        margin-bottom: 20px;
+    }
+}
+
+/* Responsive Design for Small Screens */
+@media (max-width: 480px) {
+    .gallery-image {
+        width: 250px; /* Adjust size for mobile */
+        height: 250px;
+    }
+
+    .header-title {
+        font-size: 2rem;
+    }
+
+    .header-content {
+        height: 40vh;
+    }
+
+    .btn-outline-light {
+        padding: 6px 15px;
+    }
+}
+
+footer {
+    background: rgba(0, 0, 0, 0.815);
+    overflow-x: hidden;
+    padding: 14vmin 18vmin;
+}
+  
+  footer p > span {
+    color: #ff512f;
+}
+  
+  footer input {
+    border: none !important;
+} 
+  
+  footer .input-group .input-group-text {
+    background: var(--bggradient);
+    border: none;
+}
+
+/* Styling the icons */
+.icon {
+    margin: 10px; /* Space between icons */
+    transition: transform 0.3s ease, color 0.3s ease; /* Smooth transition for animations */
+  }
+  
+  /* Grow and change color on hover */
+  .icon:hover {
+    transform: scale(1.3) rotate(10deg); /* Grow and slightly rotate the icon */
+    color: #ffd700; /* Change color to gold */
+  }
+
+  
